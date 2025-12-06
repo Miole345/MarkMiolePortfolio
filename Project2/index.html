@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Miole Portfolio</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <h1 class="logo" id="ContrastToLight1">Mark Miole</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#social">Social</a></li>
+        </ul>
+        <!-- Dark/Light mode toggle button -->
+        <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Mark Miole</strong>, a passionate Web Developer. I specialize in building modern, responsive, and interactive websites. I enjoy creating visually appealing designs while focusing on user experience and functionality.</p>
+        <p>I love coding, learning new technologies, and turning ideas into reality through programming.</p>
+        <!-- Placeholder for image -->
+        <div class="image-placeholder"><img src="MioleProfilePic.jpg" alt="" height="325px" width="400px"></div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Responsive Design & Layouts</li>
+            <li>Frontend Frameworks (React, Vue) [Future]</li>
+            <li>Version Control (Git)</li>
+            <li>Problem Solving & Debugging</li>
+        </ul>
+        <!-- Example skill bar placeholders -->
+        <div class="skill-bar">
+            <span>HTML</span>
+            <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>CSS</span>
+            <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've worked on.</p>
+        <!--PROJECT1-->
+        <div class="projects-container">
+            <div class="project-box"><img src="ClickTheTarget.jpg" alt="" height="300" width="300"><br>
+                <p style=" margin-left: 20px; text-align: left;" class="ContrastToLight2">
+                          Browser Game: “Click the Target” <br>
+                          Description: “A fun and interactive browser game where <br>
+                          users must click on moving targets as quickly as possible. <br>
+                          This project demonstrates JavaScript event handling, timers, <br>
+                          and dynamic DOM updates. It also showcases logic for scoring, <br>
+                          peed adjustments, and responsive gameplay elements.”                     
+                </p>
+            </div>
+             <!--PROJECT2-->
+            <div class="project-box"><img src="ToDoListApp.png" alt="" height="480px" width="240px"><br>
+            <p style=" margin-left: 20px; text-align: left;" class="ContrastToLight2">
+              To-Do List App <br>
+              Description: “A fully functional to-do list application where <br>
+              users can add, edit, delete, and mark tasks as completed. <br>
+              This project highlights skills in DOM manipulation, JavaScript <br>
+              functions, and local storage to save user data. It’s designed <br>
+              to improve productivity while demonstrating clean and <br>
+              interactive UI design.”
+            </p>
+            </div>
+             <!--PROJECT3-->
+            <div class="project-box"><img src="WeatherApp.jpg" alt="" height="350px" width="510px"><br>
+            <p style=" margin-left: 20px; text-align: left;" class="ContrastToLight2">
+              Weather App <br>
+              Description: “A real-time weather app that allows <br>
+              users to search for any city and view current weather <br>
+              conditions, temperature, and forecasts. Built with <br>
+              JavaScript and API integration, this project shows <br>
+              how to fetch and process JSON data, dynamically update <br>
+              the UI, and handle user input efficiently.”
+            </p>
+            </div>
+             <!--PROJECT4-->
+            <div class="project-box"><img src="AnimatedPortfolio.gif" alt="" height="270px" width="590px"><br>
+                <p style=" margin-left: 20px; text-align: left;" class="ContrastToLight2">
+                    Animated Portfolio Header / Typing Effect <br>
+                    Description: “An animated introduction for a <br>
+                    personal portfolio featuring a JavaScript-powered <br>
+                    typing effect. This project demonstrates DOM <br>
+                    manipulation, string handling, and timed <br>
+                    animations to create a dynamic and visually <br>
+                    engaging header. It’s a creative way to catch <br>
+                    attention and make a portfolio feel more <br>
+                    interactive.”
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to get in touch, feel free to email me or fill out the contact form below:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- SOCIAL LINKS SECTION -->
+    <section id="social">
+        <h2>Social Links</h2>
+        <p>Connect with me online:</p>
+        <ul class="social-links">
+            <li><a href="https://github.com/Miole345" target="_blank" class="ContrastToDark1">GitHub</a></li>
+            <li><a href="https://www.facebook.com/mark.miole.56" target="_blank" class="ContrastToDark1">Facebook</a></li>
+            <li><a href="https://www.instagram.com/myolemark/" target="_blank" class="ContrastToDark1">Instagram</a></li>
+            <li><a href="#" target="_blank" class="ContrastToDark1">Portfolio Blog</a></li>
+        </ul>
+    </section>
+
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
